@@ -1,0 +1,21 @@
+.text {
+  &--s {
+    font-weight: 400;
+    font-size: 0.95rem;
+  }
+  &--m {
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  &--l {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  &--xl {
+    font-weight: 700;
+    font-size: 1.9rem;
+  }
+  &--brown {
+    color: hsl(25, 47%, 15%);
+  }
+}

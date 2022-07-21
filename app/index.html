@@ -7,37 +7,52 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <section class="section section--orange grid grid--two-column grid--row-gap-s balance">
+      <p class="text--s">My balance</p>
+      <p class="text--l balance__amount">$921.48</p>
+      <img class="balance__img" src="./assets/images/logo.svg" alt="Logo">
+    </section>
+    <section class="section section--white spending">
+      <p class="spending__title text--l text--brown">Spending - Last 7 days</p>
+      <div class="spending__week week grid grid--seven-column">
+      <div class="week__daywrapper">
+        <div class="week__daybar"></div>
+        <p class="week__dayname">mon</p>
+      </div>
+      <div class="week__daywrapper">
+        <div class="week__daybar"></div>
+        <p class="week__dayname">tue</p>
+      </div>
+      <div class="week__daywrapper">
+        <div class="week__daybar"></div>
+        <p class="week__dayname">wed</p>
+      </div>
+      <div class="week__daywrapper">
+        <div class="week__daybar"></div>
+        <p class="week__dayname">thu</p>
+      </div>
+      <div class="week__daywrapper">
+        <div class="week__daybar"></div>
+        <p class="week__dayname">fri</p>
+      </div>
+      <div class="week__daywrapper">
+        <div class="week__daybar"></div>
+        <p class="week__dayname">sat</p>
+      </div>
+      <div class="week__daywrapper">
+        <div class="week__daybar"></div>
+        <p class="week__dayname">sun</p>
+      </div>
+    </div>
+    <div class="spending__monthly monthly grid grid--two-column grid--row-gap-s">
+      <p class="monthly__totaltext text--s">Total this month</p>
+      <p class="monthly__totalamount text--xl text--brown">$478.33</p>
+      <p class="monthly__difference text--s"><span class="text--brown text--m">+2.4%</span><br> from last month</p>
+    </div>
+    </section>
+  </main>
 </body>
 </html>

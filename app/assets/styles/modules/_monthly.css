@@ -1,0 +1,8 @@
+.monthly {
+  &__totalamount {
+    grid-column: 1;
+  }
+  &__difference {
+    text-align: end;
+  }
+}
