@@ -5,7 +5,7 @@
   }
   &--seven-column {
     grid-template-columns: repeat(7, 1fr);
-    justify-items: space-between;
+    justify-content: space-between;
     column-gap: 0.8rem;
     align-items: end;
   }

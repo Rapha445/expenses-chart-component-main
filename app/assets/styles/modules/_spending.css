@@ -2,7 +2,7 @@
   color: hsl(28, 10%, 53%);
   &__title {
     padding-top: 0.4rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
   &__week {
     padding-bottom: 3rem;

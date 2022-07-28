@@ -3,19 +3,43 @@
   &__daywrapper {
     height: 10rem;
     display: grid;
-    grid-template-rows: 1fr 1.5rem;
+    grid-template-rows: 1fr 0.8rem;
+    row-gap: 0.8rem;
   }
   &__daybar {
     height: 0%;
     background-color: hsl(10, 79%, 65%);
     border-radius: 4px;
     align-self: end;
+    position: relative;
+    &--hover {
+      background-color: rgb(236, 119, 95, 0.5);
+    }
     &--focus {
       background-color: hsl(186, 34%, 60%);
     }
+    &--focus--hover {
+      background-color: rgb(118, 181, 188, 0.5);
+    }
+  }
+  &__dayamount {
+    display: none;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 0.7rem;
+    position: absolute;
+    top: -30px;
+    left: -8px;
+    width: 3rem;
+    &--visible {
+      display: inline;
+    }
   }
   &__dayname {
-    margin-top: 0.8rem;
     font-size: 0.7rem;
     text-align: center;
     align-self: end;
